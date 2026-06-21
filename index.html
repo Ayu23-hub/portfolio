@@ -330,13 +330,20 @@
 
   /* ---------- ABOUT ---------- */
   .about-grid{display:grid;grid-template-columns:280px 1fr;gap:64px;align-items:start;}
-  .monogram-box{
+  .monogram-box {
     width:100%;aspect-ratio:1/1.05;
     background:var(--bg-raised);
     border:1px solid var(--line);border-radius:18px;
     display:flex;align-items:center;justify-content:center;
     position:relative;
   }
+  .monogram-box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:18px;
+    display:block;
+}
   .monogram-box span{font-family:var(--serif);font-size:6.5rem;color:var(--leaf);}
   .about-facts{margin-top:24px;display:flex;flex-direction:column;gap:12px;}
   .fact-row{
@@ -663,7 +670,7 @@
       <div class="about-grid">
         <div class="reveal">
           <div class="monogram-box bracket-frame">
-            <span>AS</span>
+              <img src="profile.jpg" alt="Ayushi Singh">
           </div>
           <div class="about-facts">
             <div class="fact-row"><span>Location</span><b>India</b></div>
